@@ -8,3 +8,4 @@ class GraphicalHealthStatus(Observer):
 
     def notify(self) -> None:
         print(f"[{self.observable.get_health() * 'x'}{(self.inital_health - self.observable.get_health()) * ' '}]")
+        

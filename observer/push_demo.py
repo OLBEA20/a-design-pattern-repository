@@ -21,7 +21,7 @@ def play(player: Player, duration: int):
 if __name__ == "__main__":
     health_status = TextHealthStatus()
     player_health = 10
-    health_bar = GraphicalHealthStatus(player)
+    health_bar = GraphicalHealthStatus(player_health)
     player = Player(player_health)
 
     player.subscribe(health_status)
